@@ -8,6 +8,14 @@
     }
 
     $film = new Movie();
+    $film -> title = 'shutter island';
+    $film -> genres = 'thriller';
+    $film -> year = 2010;
+    $film -> casting = [
+        'Mark Ruffalo',
+        'Leonardo DiCaprio',
+        'Ben Kingsley',
+    ];
     var_dump($film);
 ?>
 <!DOCTYPE html>
