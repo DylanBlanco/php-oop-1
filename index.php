@@ -5,17 +5,35 @@
         public $genres;
         public $casting;
         public $year;
+
+        // costruttore
+        function __construct($title, $genres, $year, $casting) {
+            $this -> title = $title;
+            $this -> genres = $genres;
+            $this -> casting = $casting;
+            $this -> year = $year;
+        }
     }
 
-    $film = new Movie();
-    $film -> title = 'shutter island';
-    $film -> genres = 'thriller';
-    $film -> year = 2010;
-    $film -> casting = [
-        'Mark Ruffalo',
-        'Leonardo DiCaprio',
-        'Ben Kingsley',
-    ];
+    // definizione istanze
+        // $film = new Movie();
+        // $film -> title = 'Shutter Island';
+        // $film -> genres = 'Thriller';
+        // $film -> year = 2010;
+        // $film -> casting = [
+        //     'Mark Ruffalo',
+        //     'Leonardo DiCaprio',
+        //     'Ben Kingsley',
+        // ];
+        // var_dump($film);
+    
+    $casting = [
+            'Mark Ruffalo',
+            'Leonardo DiCaprio',
+            'Ben Kingsley',
+        ];
+        
+    $film = new Movie('Shutter Island','Thriller', 2010, $casting);
     var_dump($film);
 ?>
 <!DOCTYPE html>
