@@ -12,19 +12,19 @@
             string $genres, 
             int $year, 
             array $casting) {
-            $this -> setTitle($title);
-            $this -> genres = $genres;
+            $this -> title = $title;
+            $this -> setGenres($genres);
             $this -> casting = $casting;
             $this -> year = $year;
         }
 
         // function
-        public function setTitle() {
-            if (is_string($title)) {
-                $this -> title = $title;
+        public function setGenres() {
+            if (is_string($genres)) {
+                $this -> genres = $genres;
             }
             else {
-                $this -> title = 'non valido';
+                $this -> genres = 'non valido';
             }
         }
     }
@@ -41,16 +41,28 @@
         // ];
         // var_dump($film);
     
+    // SHUTTER ISLAND
     $casting = [
-            'Mark Ruffalo',
-            'Leonardo DiCaprio',
-            'Ben Kingsley',
-        ];
+        'Mark Ruffalo',
+        'Leonardo DiCaprio',
+        'Ben Kingsley',
+    ];
 
-    $film = new Movie('Shutter Island','Thriller', 2010, $casting);
-    var_dump($film);
-    var_dump($film -> setTitle());
-    var_dump($film -> setTitle());
+    $shutterIsland = new Movie('Shutter Island','Thriller', 2010, $casting);
+    var_dump($shutterIsland);
+    var_dump($shutterIsland -> setGenres());
+
+    // SPIDER MAN: UN NUOVO UNIVERSO
+    $castingSpider = [
+        'Shalmek Moore',
+        'Oscar Isaac',
+        'Nicolas Cage',
+        'Chris Pine',
+        'Liev Schreiber',
+    ];
+    $SpiedrMan = new Movie('Spider Man: un nuovo universo','Animazione', 2018, $castingSpider);
+    var_dump($SpiedrMan);
+?>
 ?>
 <!DOCTYPE html>
 <html lang="en">
