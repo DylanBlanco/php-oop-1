@@ -1,5 +1,14 @@
 <?php
     $columnsNumber = 4;
+    class Movie {
+        public $title;
+        public $genres;
+        public $casting;
+        public $year;
+    }
+
+    $film = new Movie();
+    var_dump($film);
 ?>
 <!DOCTYPE html>
 <html lang="en">
