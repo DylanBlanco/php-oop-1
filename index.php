@@ -1,5 +1,4 @@
 <?php
-    $columnsNumber = 4;
     class Movie {
         public $title;
         public $genres;
@@ -60,10 +59,10 @@
         'Chris Pine',
         'Liev Schreiber',
     ];
-    $SpiedrMan = new Movie('Spider Man: un nuovo universo','Animazione', 2018, $castingSpider);
-    var_dump($SpiedrMan);
+    $spiderMan = new Movie('Spider Man: un nuovo universo','Animazione', 2018, $castingSpider);
+    var_dump($spiderMan);
 ?>
-?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
